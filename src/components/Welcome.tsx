@@ -38,6 +38,55 @@ export default function Welcome() {
                         </div>
                     </AccordionContent>
                 </AccordionItem>
+                <AccordionItem value="item-2" className="w-full">
+                    <AccordionTrigger>
+                        <h2 className="text-xl">The Money Company</h2>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                        <div className="flex flex-col gap-2">
+                            <div className="pl-5">
+                                <p>A small business finance and account tool.</p>
+                                <b>links:</b>
+                                <div className="pl-4 flex flex-col">
+                                    <a href="https://moneycompany.app" className="text-blue-500" target="_blank">- [The website]</a>
+                                    <a href="https://link.excalidraw.com/readonly/ragssmei0IYrG6qU4VEW" className="text-blue-500" target="_blank">- [Thought board]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3" className="w-full">
+                    <AccordionTrigger>
+                        <h2 className="text-xl">The Wayfinder Advisory</h2>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                        <div className="flex flex-col gap-2">
+                            <div className="pl-5">
+                                <p>A business coaching and consulting companies website.</p>
+                                <b>links:</b>
+                                <div className="pl-4 flex flex-col">
+                                    <a href="https://www.thewayfinder.co" className="text-blue-500" target="_blank">- [The website]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </AccordionContent>
+                </AccordionItem>
+            </Accordion>
+            <div className="h-[.5px] w-full bg-black"></div>
+            <div className="my-4">
+                <b>Old</b>
+            </div>
+            <Accordion type="single" collapsible>
+                <AccordionItem value="item-1" className="w-full">
+                    <AccordionTrigger>
+                        <h2 className="text-xl">Scrubbadub</h2>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                        <div className="flex flex-col gap-2">
+                            A car detailing service.
+                        </div>
+                    </AccordionContent>
+                </AccordionItem>
             </Accordion>
         </div>
     )
