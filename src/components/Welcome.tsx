@@ -29,6 +29,10 @@ export default function Welcome() {
                                     <p>command+k - change current time</p>
                                     <p>command+, - change default times</p>
                                 </div>
+                                <b>Links</b>
+                                <div className="pl-4 flex flex-col">
+                                    <a href="https://apps.apple.com/us/app/ashtyns-own-timer/id6741608687" className="text-blue-500" target="_blank">- [Apple App Store]</a>
+                                </div>
                                 <b>Privacy</b>
                                 <p>
                                     No information about the user is collected or submitted to a
