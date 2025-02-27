@@ -1,6 +1,16 @@
 import smShot from "../assets/sm-shot.png"
 import fullShot from "../assets/full-screen.png"
+import scrubHero from "../assets/scrub-hero.png"
+import scrubPurch from "../assets/scrub-purch.png"
+import scrubCheck from "../assets/scrub-checkout.png"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export default function Welcome() {
     return (
@@ -88,6 +98,22 @@ export default function Welcome() {
                     <AccordionContent>
                         <div className="flex flex-col gap-2">
                             A car detailing service.
+                            <Carousel>
+                                <CarouselContent>
+                                    <CarouselItem>
+                                        <img src={scrubHero.src} className="" />
+                                    </CarouselItem>
+                                    <CarouselItem>
+                                        <img src={scrubPurch.src} className="" />
+                                    </CarouselItem>
+                                    <CarouselItem>
+                                        <img src={scrubCheck.src} className="" />
+                                    </CarouselItem>
+                                </CarouselContent>
+                                <CarouselPrevious />
+                                <CarouselNext />
+                            </Carousel>
+                            <p>Click and drag to see more photos</p>
                         </div>
                     </AccordionContent>
                 </AccordionItem>
